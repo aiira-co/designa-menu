@@ -5,6 +5,8 @@
 
 */
 /* BASE-- base, variables, mixins, normalize */
+/* COLORS PRESETS  */
+/* COLORS Buttons*/
 h1,
 h2,
 h3,
@@ -21,7 +23,7 @@ h6 {
   h6 .thin {
     font-weight: 300; }
 
-.ad-title, .ad-header .title, .ad-header-fixed .title, .ad-header-responsive .title {
+.ad-title, .ad-header .title, .ad-header-fixed .title, .ad-header-responsive .title, .ad-subheader > h1, .ad-subheader > h2 {
   font-size: 18px;
   color: inherit;
   margin: 0;
@@ -94,5 +96,228 @@ h6 {
 
 .ad-header-responsive {
   height: 400px; }
+
+.ad-subheader {
+  display: block;
+  height: 48px;
+  color: inherit;
+  -webkit-box-shadow: 0px 1px 2px 1px rgba(160, 160, 160, 0.5);
+  -moz-box-shadow: 0px 1px 2px 1px rgba(160, 160, 160, 0.5);
+  -o-box-shadow: 0px 1px 2px 1px rgba(160, 160, 160, 0.5);
+  -mz-box-shadow: 0px 1px 2px 1px rgba(160, 160, 160, 0.5);
+  box-shadow: 0px 1px 2px 1px rgba(160, 160, 160, 0.5);
+  padding: 0 16px; }
+  .ad-subheader > h1, .ad-subheader > h2 {
+    margin: 0;
+    padding-top: 12px; }
+
+.ad-nav {
+  width: 100%;
+  height: 48px;
+  display: flex;
+  z-index: 100; }
+  .ad-nav .ad-logo {
+    width: auto;
+    height: 48px;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    vertical-align: top; }
+    .ad-nav .ad-logo img {
+      height: 100%;
+      width: auto; }
+  .ad-nav .ad-input {
+    margin-top: 7px; }
+  .ad-nav .ad-dropdown > .ad-content {
+    margin-top: 30px;
+    margin-left: -135px;
+    width: 300px; }
+    .ad-nav .ad-dropdown > .ad-content::after {
+      position: absolute;
+      content: '';
+      width: 35px;
+      height: 35px;
+      background-color: white;
+      border-left: 1px solid rgba(160, 160, 160, 0.1);
+      border-top: 1px solid rgba(160, 160, 160, 0.1);
+      border-radius: 10px;
+      transform: rotateZ(45deg);
+      top: -7px;
+      left: 50%;
+      margin-left: -17px; }
+  .ad-nav #menuTrigger {
+    display: none;
+    z-index: 120; }
+  .ad-nav.ad-fixed {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0; }
+  .ad-nav.spread .ad-menu {
+    display: inline-flex;
+    width: 60%; }
+    .ad-nav.spread .ad-menu ul li {
+      margin: 0 3vw; }
+
+.ad-nav > .ad-menu {
+  display: inline-block;
+  vertical-align: top;
+  width: auto;
+  height: 48px; }
+  .ad-nav > .ad-menu ul {
+    list-style: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    margin-top: 12px; }
+    .ad-nav > .ad-menu ul li {
+      list-style: none;
+      float: left;
+      padding: 5px 7px;
+      opacity: 0.8;
+      cursor: pointer;
+      -webkit-transition: all 0.3s ease-out 0s;
+      -moz-transition: all 0.3s ease-out 0s;
+      -o-transition: all 0.3s ease-out 0s;
+      transition: all 0.3s ease-out 0s; }
+      .ad-nav > .ad-menu ul li:hover {
+        opacity: 1; }
+      .ad-nav > .ad-menu ul li:hover ul {
+        visibility: visible;
+        opacity: 1;
+        margin-top: 3px; }
+      .ad-nav > .ad-menu ul li ul {
+        position: absolute;
+        display: block;
+        visibility: collapse;
+        opacity: 0;
+        width: auto;
+        min-width: 150px;
+        height: auto;
+        background-color: rgba(34, 44, 55, 0.9);
+        margin: 0;
+        border-radius: 5px;
+        -webkit-transition: all 0.3s ease-out 0s;
+        -moz-transition: all 0.3s ease-out 0s;
+        -o-transition: all 0.3s ease-out 0s;
+        transition: all 0.3s ease-out 0s; }
+        .ad-nav > .ad-menu ul li ul li {
+          display: block;
+          clear: both;
+          margin: 0;
+          width: 100%; }
+          .ad-nav > .ad-menu ul li ul li a {
+            display: block;
+            padding: 10px;
+            margin: 0;
+            width: 100%;
+            height: 100%;
+            -webkit-transition: all 0.3s ease-out 0s;
+            -moz-transition: all 0.3s ease-out 0s;
+            -o-transition: all 0.3s ease-out 0s;
+            transition: all 0.3s ease-out 0s; }
+          .ad-nav > .ad-menu ul li ul li:hover {
+            background-color: rgba(0, 0, 0, 0.2); }
+
+.menuTriggered {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  height: 100vh;
+  right: -300px;
+  width: 300px;
+  background-color: rgba(34, 44, 55, 0.9);
+  color: white;
+  z-index: 100;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s; }
+  .menuTriggered.ad-show {
+    right: -300px; }
+  .menuTriggered div.ad-logo {
+    height: 48px;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center; }
+    .menuTriggered div.ad-logo img {
+      height: 100%; }
+  .menuTriggered ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+    width: 100%; }
+    .menuTriggered ul li {
+      display: block;
+      margin: 5px auto;
+      text-align: center; }
+      .menuTriggered ul li a {
+        padding: 10px 0 !important;
+        width: 100%;
+        height: 100%;
+        display: block;
+        -webkit-transition: all 0.3s ease-out 0s;
+        -moz-transition: all 0.3s ease-out 0s;
+        -o-transition: all 0.3s ease-out 0s;
+        transition: all 0.3s ease-out 0s; }
+        .menuTriggered ul li a:hover {
+          background-color: rgba(0, 0, 0, 0.4); }
+      .menuTriggered ul li ul {
+        background: rgba(0, 0, 0, 0.2);
+        display: block;
+        position: relative; }
+        .menuTriggered ul li ul:before {
+          position: absolute;
+          width: 20px;
+          height: 20px;
+          content: '';
+          background-color: rgba(0, 0, 0, 0.2);
+          top: -10px;
+          left: 50%;
+          margin-left: -10px;
+          transform: rotateZ(45deg); }
+
+.ad-left {
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 200px;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s; }
+  .ad-left.line:before {
+    position: relative;
+    left: 20px;
+    width: 500px;
+    top: 16px;
+    bottom: 18px;
+    height: 300px;
+    background-color: #ccb6af;
+    z-index: 100; }
+  .ad-left.ad-hide {
+    left: -200px; }
+    .ad-left.ad-hide + .ad-right {
+      left: 0; }
+
+.ad-right {
+  display: block;
+  position: fixed;
+  left: 200px;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  overflow: auto;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -moz-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s; }
 
 /*# sourceMappingURL=designa-menu.css.map */

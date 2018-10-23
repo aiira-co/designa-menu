@@ -9,15 +9,8 @@
     &>h2 {
         @extend .ad-title;
         margin: 0;
-        padding-top: 8px;
+        padding-top: 12px;
     }
 
-    &>.ad-fab {
-        position: absolute;
-        top: 24px;
-
-        &.rFloat {
-            right: 16px;
-        }
-    }
+ 
 }
