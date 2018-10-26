@@ -1,5 +1,5 @@
 /*
-   ** DesignaCore
+   ** DesignaMenu
    ** Author: Kofi Owusu-Afriyie
    **Version: 2.5.0
 
@@ -43,9 +43,7 @@ h6 {
   -o-box-shadow: 0px 1px 2px 1px rgba(160, 160, 160, 0.3);
   -mz-box-shadow: 0px 1px 2px 1px rgba(160, 160, 160, 0.3);
   box-shadow: 0px 1px 2px 1px rgba(160, 160, 160, 0.3); }
-  .ad-header > .down, .ad-header-fixed > .down, .ad-header-responsive > .down {
-    margin-top: 16px; }
-  .ad-header.line:before, .line.ad-header-fixed:before, .line.ad-header-responsive:before {
+  .ad-header.outline:before, .outline.ad-header-fixed:before, .outline.ad-header-responsive:before {
     content: '';
     position: absolute;
     display: block;
