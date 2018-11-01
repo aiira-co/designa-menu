@@ -57,22 +57,24 @@ h6 {
   .ad-header .ad-btn, .ad-header-fixed .ad-btn, .ad-header-responsive .ad-btn {
     margin-top: 12px; }
   .ad-header .ad-dropdown > .ad-content, .ad-header-fixed .ad-dropdown > .ad-content, .ad-header-responsive .ad-dropdown > .ad-content {
-    margin-top: 30px;
-    margin-left: -135px;
+    margin-top: 20px;
+    margin-left: -200%;
     width: 300px; }
-    .ad-header .ad-dropdown > .ad-content::after, .ad-header-fixed .ad-dropdown > .ad-content::after, .ad-header-responsive .ad-dropdown > .ad-content::after {
-      position: absolute;
-      content: '';
-      width: 35px;
-      height: 35px;
-      background-color: white;
-      border-left: 1px solid rgba(160, 160, 160, 0.1);
-      border-top: 1px solid rgba(160, 160, 160, 0.1);
-      border-radius: 10px;
-      transform: rotateZ(45deg);
-      top: -7px;
-      left: 50%;
-      margin-left: -17px; }
+    .ad-header .ad-dropdown > .ad-content > .ad-card, .ad-header-fixed .ad-dropdown > .ad-content > .ad-card, .ad-header-responsive .ad-dropdown > .ad-content > .ad-card {
+      overflow: initial; }
+      .ad-header .ad-dropdown > .ad-content > .ad-card::after, .ad-header-fixed .ad-dropdown > .ad-content > .ad-card::after, .ad-header-responsive .ad-dropdown > .ad-content > .ad-card::after {
+        position: absolute;
+        content: '';
+        width: 20px;
+        height: 20px;
+        background-color: white;
+        border-radius: 3px;
+        transform: rotateZ(45deg);
+        top: -7px;
+        left: 50%;
+        margin-left: -10px; }
+      .ad-header .ad-dropdown > .ad-content > .ad-card.bg-dark::after, .ad-header-fixed .ad-dropdown > .ad-content > .ad-card.bg-dark::after, .ad-header-responsive .ad-dropdown > .ad-content > .ad-card.bg-dark::after {
+        background-color: #1b232c; }
   .ad-header .ad-logo, .ad-header-fixed .ad-logo, .ad-header-responsive .ad-logo {
     display: inline-block;
     width: auto;
@@ -127,22 +129,24 @@ h6 {
   .ad-nav .ad-input {
     margin-top: 7px; }
   .ad-nav .ad-dropdown > .ad-content {
-    margin-top: 30px;
+    margin-top: 20px;
     margin-left: -135px;
     width: 300px; }
-    .ad-nav .ad-dropdown > .ad-content::after {
-      position: absolute;
-      content: '';
-      width: 35px;
-      height: 35px;
-      background-color: white;
-      border-left: 1px solid rgba(160, 160, 160, 0.1);
-      border-top: 1px solid rgba(160, 160, 160, 0.1);
-      border-radius: 10px;
-      transform: rotateZ(45deg);
-      top: -7px;
-      left: 50%;
-      margin-left: -17px; }
+    .ad-nav .ad-dropdown > .ad-content > .ad-card {
+      overflow: initial; }
+      .ad-nav .ad-dropdown > .ad-content > .ad-card::after {
+        position: absolute;
+        content: '';
+        width: 20px;
+        height: 20px;
+        background-color: white;
+        border-radius: 3px;
+        transform: rotateZ(45deg);
+        top: -7px;
+        left: 50%;
+        margin-left: -10px; }
+      .ad-nav .ad-dropdown > .ad-content > .ad-card.bg-dark::after {
+        background-color: #1b232c; }
   .ad-nav #menuTrigger {
     display: none;
     z-index: 120; }
@@ -192,7 +196,7 @@ h6 {
         width: auto;
         min-width: 150px;
         height: auto;
-        background-color: rgba(34, 44, 55, 0.9);
+        background-color: rgba(27, 35, 44, 0.9);
         margin: 0;
         border-radius: 5px;
         -webkit-transition: all 0.3s ease-out 0s;
@@ -224,7 +228,7 @@ h6 {
   height: 100vh;
   right: -300px;
   width: 300px;
-  background-color: rgba(34, 44, 55, 0.9);
+  background-color: rgba(27, 35, 44, 0.9);
   color: white;
   z-index: 100;
   -webkit-transition: all 0.3s ease-out 0s;
