@@ -1,12 +1,12 @@
 // NAVIGATION
-.ad-nav {
+.#{$classPrefix}-nav {
     //    background-color:red;
     width: 100%;
     height: 48px;
     display: flex;
     z-index: 100;
 
-    .ad-logo {
+    .#{$classPrefix}-logo {
         // background-color: black;
         width: auto;
         height: 48px;
@@ -21,17 +21,17 @@
         }
     }
 
-    .ad-input {
+    .#{$classPrefix}-input {
         margin-top: 7px;
     }
 
-    .ad-dropdown {
-        &>.ad-content {
+    .#{$classPrefix}-dropdown {
+        &>.#{$classPrefix}-content {
             margin-top: 20px;
             margin-left: -135px;
             width: 300px;
 
-            &>.ad-card {
+            &>.#{$classPrefix}-card {
                 overflow: initial;
 
                 &::after {
@@ -66,21 +66,21 @@
     //Positioning
     //Positioning
     //Positioning
-    &.ad-fixed {
+    &.#{$classPrefix}-fixed {
         position: fixed;
         left: 0;
         top: 0;
         right: 0;
     }
 
-    &.ad-fixedAbsolute {}
+    &.#{$classPrefix}-fixedAbsolute {}
 
     //Navigation Behavior
     //Navigation Behavior
     //Navigation Behavior
     //Navigation Behavior
     &.spread {
-        .ad-menu {
+        .#{$classPrefix}-menu {
             display: inline-flex;
             width: 60%; // background-color:red;
 

@@ -10,11 +10,11 @@
     z-index: 100;
     @include transEase(0.3s);
 
-    &.ad-show {
+    &.#{$classPrefix}-show {
         right: -300px;
     }
 
-    div.ad-logo {
+    div.#{$classPrefix}-logo {
         height: 48px;
         margin: 0 auto;
         padding: 0;

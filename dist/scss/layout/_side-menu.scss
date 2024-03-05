@@ -1,5 +1,5 @@
 //Right
-.ad-left {
+.#{$classPrefix}-left {
     display: block;
     position: fixed;
     left: 0;
@@ -22,16 +22,16 @@
         z-index: 100;
     }
 
-    &.ad-hide {
+    &.#{$classPrefix}-hide {
         left: -200px;
 
-        &+.ad-right {
+        &+.#{$classPrefix}-right {
             left: 0;
         }
     }
 }
 
-.ad-right {
+.#{$classPrefix}-right {
     display: block;
     position: fixed;
     left: 200px;

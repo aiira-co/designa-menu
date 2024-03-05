@@ -1,4 +1,4 @@
-.ad-subheader {
+.#{$classPrefix}-subheader {
     display: block;
     height: 48px;
     color: inherit;
@@ -7,7 +7,7 @@
 
     &>h1,
     &>h2 {
-        @extend .ad-title;
+        @extend .#{$classPrefix}-title;
         margin: 0;
         padding-top: 12px;
     }

@@ -1,5 +1,5 @@
-.ad-nav {
-    &>.ad-menu {
+.#{$classPrefix}-nav {
+    &>.#{$classPrefix}-menu {
         display: inline-block;
         vertical-align: top;
         width: auto;
