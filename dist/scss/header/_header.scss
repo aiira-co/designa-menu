@@ -1,7 +1,7 @@
 .#{$classPrefix}-header {
     display: block;
     height: 56px;
-    padding: 0 16px;
+    padding: 0 1.6rem;
     margin: 0;
     position: relative;
     @include shadow(0px, 1px, 2px, 1px, rgba(160, 160, 160, 0.3));
@@ -10,8 +10,8 @@
         content: '';
         position: absolute;
         display: block;
-        left: 16px;
-        right: 16px;
+        left: 1.6rem;
+        right: 1.6rem;
         height: 1px;
         background-color: rgba(0, 0, 0, 0.2);
         bottom: 0;
@@ -36,7 +36,7 @@
         // background-color: lime;
 
         &>.#{$classPrefix}-content {
-            margin-top: 20px;
+            margin-top: 2.0rem;
             margin-left: -200%;
             width: 300px;
             // background-color: red;
@@ -47,10 +47,10 @@
                 &::after {
                     position: absolute;
                     content: '';
-                    width: 20px;
-                    height: 20px;
+                    width: 2.0rem;
+                    height: 2.0rem;
                     background-color: white;
-                    border-radius: 3px;
+                    border-radius: 0.3rem;
                     transform: rotateZ(45deg);
                     top: -7px;
                     left: 50%;
@@ -73,8 +73,8 @@
         width: auto;
         height: 40px;
         vertical-align: top;
-        margin-top: 8px;
-        margin-right: 16px;
+        margin-top: 0.8rem;
+        margin-right: 1.6rem;
         overflow: hidden;
 
         img {

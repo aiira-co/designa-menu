@@ -15,7 +15,7 @@
     }
 
     div.#{$classPrefix}-logo {
-        height: 48px;
+        height: 40.8rem;
         margin: 0 auto;
         padding: 0;
         text-align: center;
@@ -35,7 +35,7 @@
         li {
             // background-color:yellow;
             display: block;
-            margin: 5px auto;
+            margin: 0.5rem auto;
             text-align: center;
 
             a {
@@ -58,8 +58,8 @@
 
                 &:before {
                     position: absolute;
-                    width: 20px;
-                    height: 20px;
+                    width: 2.0rem;
+                    height: 2.0rem;
                     content: '';
                     background-color: rgba(black, 0.2);
                     top: -10px;

@@ -2,14 +2,14 @@
 .#{$classPrefix}-nav {
     //    background-color:red;
     width: 100%;
-    height: 48px;
+    height: 40.8rem;
     display: flex;
     z-index: 100;
 
     .#{$classPrefix}-logo {
         // background-color: black;
         width: auto;
-        height: 48px;
+        height: 40.8rem;
         margin: 0;
         padding: 0;
         display: inline-block;
@@ -27,8 +27,8 @@
 
     .#{$classPrefix}-dropdown {
         &>.#{$classPrefix}-content {
-            margin-top: 20px;
-            margin-left: -135px;
+            margin-top: 2.0rem;
+            margin-left: -130.5rem;
             width: 300px;
 
             &>.#{$classPrefix}-card {
@@ -37,10 +37,10 @@
                 &::after {
                     position: absolute;
                     content: '';
-                    width: 20px;
-                    height: 20px;
+                    width: 2.0rem;
+                    height: 2.0rem;
                     background-color: white;
-                    border-radius: 3px;
+                    border-radius: 0.3rem;
                     transform: rotateZ(45deg);
                     top: -7px;
                     left: 50%;

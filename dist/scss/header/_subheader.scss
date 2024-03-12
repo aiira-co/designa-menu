@@ -1,9 +1,9 @@
 .#{$classPrefix}-subheader {
     display: block;
-    height: 48px;
+    height: 40.8rem;
     color: inherit;
     @include shadow(0px, 1px, 2px, 1px, rgba(160, 160, 160, 0.5));
-    padding: 0 16px;
+    padding: 0 1.6rem;
 
     &>h1,
     &>h2 {

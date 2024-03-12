@@ -3,7 +3,7 @@
         display: inline-block;
         vertical-align: top;
         width: auto;
-        height: 48px; // background-color:blue;
+        height: 40.8rem; // background-color:blue;
 
         ul {
             list-style: none;
@@ -15,7 +15,7 @@
             li {
                 list-style: none;
                 float: left; // background-color:green;
-                padding: 5px 7px;
+                padding: 0.5rem 7px;
                 opacity: 0.8;
                 cursor: pointer;
                 @include transEase(0.3s);
@@ -28,7 +28,7 @@
                     ul {
                         visibility: visible;
                         opacity: 1;
-                        margin-top: 3px;
+                        margin-top: 0.3rem;
                     }
                 }
 
@@ -42,7 +42,7 @@
                     height: auto;
                     background-color: rgba($dark, 0.9);
                     margin: 0; // margin-top: 4px;
-                    border-radius: 5px; // padding: 0 !important;
+                    border-radius: 0.5rem; // padding: 0 !important;
                     @include transEase(0.3s);
 
                     li {
